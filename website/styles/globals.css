@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:active,
+*:focus {
+  outline: none;
+  box-sizing: border-box;
+}
+html,
+body {
+  background-color: #0f0f0f;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+  height: 18px;
+  width: 18px;
+  padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+  border: 1px solid var(--tw-border-opacity);
+  border-radius: 50px;
+}
+
+.btn .rainbow {
+  /* padding: 2px; */
+  filter: blur(6px);
+  background: conic-gradient(
+    #ff2e4e,
+    #d960ff,
+    #9264ff,
+    #00b3f0,
+    #06cd69,
+    #ffcd00,
+    #ff5c22,
+    #ff2e4e
+  );
+}
+.btn .child {
+  text-shadow: 0px 0px 9px rgb(0 0 0 / 62%);
+}
