@@ -1,13 +1,24 @@
 {
   "name": "iconsax-react-native",
-  "version": "0.0.1",
-  "description": "",
+  "version": "0.0.2",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
-  "license": "MIT",
+  "homepage": "https://github.com/rendinjast/iconsax-react#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rendinjast/iconsax-react.git",
+    "directory": "packages/iconsax-react-native"
+  },
+  "bugs": {
+    "url": "https://github.com/rendinjast/iconsax-react/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
+  "license": "MIT",
   "scripts": {
     "gen": "node ./scripts/build.js",
     "preBuild": "rm -rf dist",
@@ -16,13 +27,12 @@
   },
   "keywords": [
     "icons",
-    "svg",
-    "library"
+    "react-native",
+    "icon components",
+    "iconsax"
   ],
-  "license": "MIT",
   "files": [
-    "dist",
-    "es"
+    "dist"
   ],
   "devDependencies": {
     "@babel/cli": "^7.15.7",
