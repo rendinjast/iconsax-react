@@ -1,0 +1,16 @@
+node_modules
+
+packages/*/dist
+packages/*/node_modules
+packages/*/src/*
+
+
+
+
+website/node_modules
+website/.next
+
+
+
+yarn-error.log*
+
