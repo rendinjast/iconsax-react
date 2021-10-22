@@ -1,0 +1,26 @@
+{
+  "name": "iconsax",
+  "description": "iconsax for react and react native",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "website"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rendinjast/iconsax-react.git"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "gen": "node ./scripts/build.js",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build --ignore website"
+  },
+  "devDependencies": {
+    "camelcase": "^6.2.0",
+    "cheerio": "^1.0.0-rc.10",
+    "lerna": "^4.0.0"
+  }
+}

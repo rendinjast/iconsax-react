@@ -17,7 +17,7 @@ module.exports = {
       },
       colors: {
         // primary: 'rgba(139, 92, 246)',
-        primary: '#7045D4',
+        primary: '#FF8A65',
         bg: '#0F0F0F',
         card: '#151515',
         border: '#1d1d1d',
