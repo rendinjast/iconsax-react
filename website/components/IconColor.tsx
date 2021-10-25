@@ -1,10 +1,10 @@
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
 import { BlockPicker, ColorChangeHandler } from 'react-color'
-import { useAppContext } from '../context/AppContext'
+import { useIconContext } from '../store'
 import { useOnClickOutside } from '../hooks'
 
-export const ColorPicker = () => {
-  const { state, dispatch } = useAppContext()
+export const IconColor = () => {
+  const { state, dispatch } = useIconContext()
   const [isOpen, setIsOpen] = useState(false)
   const colorRef = useRef(null)
 
@@ -18,14 +18,20 @@ export const ColorPicker = () => {
   }
   return (
     <div className="relative">
-      <span
+      <div
         onClick={() => setIsOpen((prv) => !prv)}
-        style={{ backgroundColor: state.color }}
-        className="w-4 h-4 rounded-full block cursor-pointer"
-      ></span>
+        style={{
+          backgroundColor: state.color,
+          textShadow: '1px 1px 4px black',
+        }}
+        className="h-10 grid place-items-center px-4 rounded-xl cursor-pointer"
+      >
+        <span className="hidden w-16 text-center sm:block">{state.color}</span>
+      </div>
       {isOpen && (
-        <div ref={colorRef} className="absolute bottom-2 right-6">
+        <div ref={colorRef} className="absolute top-0 right-0">
           <BlockPicker
+            className="shadow-2xl"
             color={state.color}
             onChangeComplete={handleChangeCOmplete}
             triangle="hide"
