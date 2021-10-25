@@ -1,12 +1,12 @@
-import { AppState, VariantType } from './AppContext'
+import { IconState, VariantType } from './IconContext'
 
-export type AppAction =
+export type IconAction =
   | { type: 'SEARCH'; payload: string }
   | { type: 'CHANGE_VARIANT'; payload: VariantType }
   | { type: 'CHANGE_SIZE'; payload: number }
   | { type: 'CHANGE_COLOR'; payload: string }
 
-const AppReducer = (state: AppState, action: AppAction) => {
+const IconReducer = (state: IconState, action: IconAction) => {
   switch (action.type) {
     case 'SEARCH':
       return { ...state, search: action.payload }
@@ -22,4 +22,4 @@ const AppReducer = (state: AppState, action: AppAction) => {
   }
 }
 
-export default AppReducer
+export default IconReducer
