@@ -16,7 +16,11 @@
   "scripts": {
     "gen": "node ./scripts/build.js",
     "bootstrap": "lerna bootstrap",
-    "build": "lerna run build --ignore website"
+    "build": "lerna run build --ignore website",
+    "website": "yarn workspace website",
+    "website:dev": "yarn website dev",
+    "website:build": "yarn website build",
+    "website:start": "yarn website start"
   },
   "devDependencies": {
     "camelcase": "^6.2.0",
