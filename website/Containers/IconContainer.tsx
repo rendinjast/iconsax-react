@@ -1,10 +1,14 @@
-import { IconCustomizer, IconList } from '../components'
+import { IconCustomizer, IconList, SelectedIcon } from '../components'
+import { IconContext } from '../store'
 
 export const IconContainer = () => {
   return (
     <div className="relative mt-40 font-light">
-      <IconCustomizer />
-      <IconList />
+      <IconContext>
+        <IconCustomizer />
+        <IconList />
+        <SelectedIcon />
+      </IconContext>
     </div>
   )
 }
