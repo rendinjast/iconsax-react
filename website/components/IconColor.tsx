@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import { BlockPicker, ColorChangeHandler } from 'react-color'
 import { useIconContext } from '../store'
 import { useOnClickOutside } from '../hooks'

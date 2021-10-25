@@ -1,6 +1,4 @@
 import { IconColor, IconSearch, IconSize, IconVariant } from '.'
-import { SearchNormal } from 'iconsax-react'
-import { useDebounce } from '../hooks'
 
 export const IconCustomizer = () => {
   return (

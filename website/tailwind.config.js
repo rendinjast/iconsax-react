@@ -9,9 +9,6 @@ module.exports = {
       screens: {
         xs: '365px',
       },
-      gridTemplateColumns: {
-        icon: 'repeat(auto-fill,144px)',
-      },
       zIndex: {
         '-1': '-1',
       },

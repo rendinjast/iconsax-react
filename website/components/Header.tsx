@@ -1,8 +1,5 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
-import React, { FC } from 'react'
-import Image from 'next/image'
-import { Heart, Link } from 'iconsax-react'
-import { CopyBlock, CodeBlock, anOldHope } from 'react-code-blocks'
+import React from 'react'
+import { Heart } from 'iconsax-react'
 import { RainbowButton } from '.'
 
 export const Header = () => {

@@ -1,12 +1,11 @@
-import iconsMeta from 'iconsax-react/dist/meta-data.json'
-import { CSSProperties, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import icons, { IIconsArray } from '../lib/icons'
 import { IconItem } from '.'
 import { searchStore } from '../store'
 import { EmojiSad } from 'iconsax-react'
 import { AutoSizer, List, WindowScroller } from 'react-virtualized'
 
-const Empty = ({ query }: { query: string }) => {
+const Empty = () => {
   return (
     <div className="w-full flex gap-4 flex-col justify-start items-center">
       <span>
@@ -68,7 +67,7 @@ export const IconList = () => {
                       >
                         {Array.from(
                           { length: numColumns },
-                          (value, columnIndex) => {
+                          (_, columnIndex) => {
                             const icon =
                               filtered[rowIndex * numColumns + columnIndex]
                             if (!icon) {
@@ -87,7 +86,7 @@ export const IconList = () => {
             )}
           </WindowScroller>
         ) : (
-          <Empty query={query} />
+          <Empty />
         )}
       </div>
     </div>

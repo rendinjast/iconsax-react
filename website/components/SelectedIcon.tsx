@@ -1,24 +1,11 @@
-import {
-  createElement,
-  FC,
-  ReactElement,
-  useEffect,
-  useRef,
-  useState,
-} from 'react'
+import { ReactElement, useEffect, useRef, useState } from 'react'
 import { renderToString } from 'react-dom/server'
 import { saveAs } from 'file-saver'
 import copy from 'copy-to-clipboard'
 import canvg from 'canvg'
 import gsap from 'gsap'
-import {
-  ClipboardImport,
-  ClipboardText,
-  CloseCircle,
-  Icon,
-  Import,
-} from 'iconsax-react'
-import { useClipboard, useOnClickOutside } from '../hooks'
+import { ClipboardText, CloseCircle, Import } from 'iconsax-react'
+import { useOnClickOutside } from '../hooks'
 import { selectedStore, useIconContext } from '../store'
 
 const duration = 300
