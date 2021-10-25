@@ -14,16 +14,6 @@ html,
 body {
   background-color: #0f0f0f;
 }
-input[type='color']::-webkit-color-swatch-wrapper {
-  height: 18px;
-  width: 18px;
-  padding: 0;
-}
-input[type='color']::-webkit-color-swatch {
-  border: 1px solid var(--tw-border-opacity);
-  border-radius: 50px;
-}
-
 .btn .rainbow {
   /* padding: 2px; */
   filter: blur(6px);
@@ -40,4 +30,11 @@ input[type='color']::-webkit-color-swatch {
 }
 .btn .child {
   text-shadow: 0px 0px 9px rgb(0 0 0 / 62%);
+}
+
+.toolbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  z-index: 1;
 }
