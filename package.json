@@ -17,6 +17,7 @@
     "gen": "node ./scripts/build.js",
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build --ignore website",
+    "pub": "lerna run pub --ignore website",
     "website": "yarn workspace website",
     "website:dev": "yarn website dev",
     "website:build": "yarn website build",

@@ -1,9 +1,9 @@
 {
   "name": "iconsax-react",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Iconsax icon pack for React",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
-  "homepage": "https://rendinjast.github.io/iconsax-react",
+  "homepage": "https://iconsax-react.pages.dev/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rendinjast/iconsax-react.git",

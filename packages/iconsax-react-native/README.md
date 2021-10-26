@@ -9,7 +9,7 @@ Perfectly balance |
 <p>
 
 <p align="center">
-  <a href="https://rendinjast.github.io/iconsax-react"><strong>Browse icons at site</strong></a>
+  <a href="https://iconsax-react.pages.dev/"><strong>Browse icons at site</strong></a>
 </p>
 
 <br>
