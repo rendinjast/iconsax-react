@@ -1,6 +1,7 @@
 const cc = require('camelcase');
 const path = require('path');
 const fs = require('fs').promises;
+const existsSync = require('fs').existsSync;
 const fetchIcon = require('./fetchIcon');
 const generateIcons = require('./generateIcons');
 
@@ -41,10 +42,15 @@ const main = async () => {
 
       // 3. cleaning old icons
       console.log(`----- cleaning old icons -> ${p}`);
-      await fs.rm(srPath, {
-        recursive: true,
-        force: true,
-      });
+
+      // const isDirectory = stat.isDirectory();
+      const exist = existsSync(srPath);
+      if (exist) {
+        await fs.rm(srPath, {
+          recursive: true,
+          force: true,
+        });
+      }
       await fs.mkdir(srPath);
 
       // 4. generating icons
