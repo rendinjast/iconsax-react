@@ -1,8 +1,8 @@
 {
   "name": "iconsax-react-native",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
-  "homepage": "https://github.com/rendinjast/iconsax-react#readme",
+  "homepage": "https://rendinjast.github.io/iconsax-react",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rendinjast/iconsax-react.git",

@@ -9,6 +9,7 @@ packages/*/src/*
 
 website/node_modules
 website/.next
+website/out
 
 
 
