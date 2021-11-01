@@ -12,8 +12,8 @@ Perfectly balance |
 <br>
 <br>
 
-> ©️ iconsax <a href="https://github.com/lusaxweb/iconsax">github</a> and
-> <a href="https://iconsax.io/">official website</a>(other format and platform available)
+> ©️ iconsax [github](https://github.com/lusaxweb/iconsax) and
+> [official website](https://iconsax.io/) (other format and platform available)
 
 ## Installation
 
