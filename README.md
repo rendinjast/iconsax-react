@@ -64,9 +64,8 @@ You can configure Icons with inline props:
 
 ## Contributing
 
-See
-<a href="https://github.com/rendinjast/iconsax-react/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## License
 
-<a href="https://github.com/rendinjast/iconsax-react/blob/main/LICENSE">MIT</a>
+[MIT](./LICENSE)
