@@ -1,6 +1,6 @@
 {
   "name": "iconsax-react-native",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
   "homepage": "https://iconsax-react.pages.dev/",
   "repository": {
@@ -14,8 +14,8 @@
   "publishConfig": {
     "access": "public"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "license": "MIT",
