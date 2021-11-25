@@ -1,6 +1,6 @@
 {
   "name": "iconsax-react",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "Iconsax icon pack for React",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
   "homepage": "https://iconsax-react.pages.dev/",
@@ -16,8 +16,8 @@
     "access": "public"
   },
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
@@ -50,6 +50,7 @@
     "rollup": "^2.56.3",
     "rollup-plugin-copy": "^3.4.0",
     "rollup-plugin-filesize": "^9.1.1",
+    "rollup-plugin-multi-input": "^1.3.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-uglify": "^6.0.4"

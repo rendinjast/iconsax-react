@@ -14,11 +14,11 @@
   "publishConfig": {
     "access": "public"
   },
+  "license": "MIT",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
-  "license": "MIT",
   "scripts": {
     "gen": "node ./scripts/build.js",
     "preBuild": "rm -rf dist",

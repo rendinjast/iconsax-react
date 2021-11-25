@@ -1,74 +1,47 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import filesize from 'rollup-plugin-filesize';
 import babel from '@rollup/plugin-babel';
 import copy from 'rollup-plugin-copy';
 import external from 'rollup-plugin-peer-deps-external';
-import { terser } from 'rollup-plugin-terser';
-import { uglify } from 'rollup-plugin-uglify';
-import pkg from './package.json';
+import multiInput from 'rollup-plugin-multi-input';
 
-const input = 'src/index.js';
-
-// const minifyExtension = (pathToFile) => pathToFile.replace(/\.js$/, '.min.js');
-
-// const plugins = [
-//   babel({
-//     exclude: 'node_modules/**',
-//   }),
-//   external(),
-//   resolve(),
-//   commonjs(),
-//   filesize(),
-// ];
-
-const minCjsPlugins = [
-  babel({
-    exclude: 'node_modules/**',
-  }),
-  external(),
-  resolve(),
-  commonjs(),
-  uglify(),
-  filesize(),
+const input = ['src/**/*.js'];
+const output = [
+  {
+    dir: 'dist/cjs',
+    format: 'cjs',
+    exports: 'named',
+    sourcemap: false,
+  },
+  {
+    dir: 'dist/esm',
+    format: 'es',
+    exports: 'named',
+    sourcemap: false,
+  },
 ];
 
-const minUmdEsmPlugins = [
+const plugins = [];
+plugins.push(
   babel({
     exclude: 'node_modules/**',
   }),
-  external(),
-  resolve(),
-  commonjs(),
-  terser(),
+);
+plugins.push(multiInput());
+plugins.push(external());
+plugins.push(resolve());
+plugins.push(commonjs());
+plugins.push(
   copy({
     targets: [
       { src: 'src/index.d.ts', dest: 'dist' },
       { src: '../../meta-data.json', dest: 'dist' },
     ],
   }),
-  filesize(),
-];
-
-export default [
-  {
-    input,
-    output: {
-      file: pkg.main,
-      format: 'cjs',
-      sourcemap: false,
-    },
-    plugins: minCjsPlugins,
-  },
-
-  {
-    input,
-    output: {
-      file: pkg.module,
-      format: 'es',
-      sourcemap: false,
-      exports: 'named',
-    },
-    plugins: minUmdEsmPlugins,
-  },
-];
+);
+export default {
+  input,
+  output,
+  external: ['react', 'prop-types'],
+  plugins,
+};
