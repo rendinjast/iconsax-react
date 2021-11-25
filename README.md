@@ -12,8 +12,8 @@ Perfectly balance |
 <br>
 <br>
 
-> ©️ iconsax <a href="https://github.com/lusaxweb/iconsax">github</a> and
-> <a href="https://iconsax.io/">official website</a>(other format and platform available)
+> ©️ iconsax [github](https://github.com/lusaxweb/iconsax) and
+> [official website](https://iconsax.io/) (other format and platform available)
 
 ## Installation
 
@@ -64,9 +64,8 @@ You can configure Icons with inline props:
 
 ## Contributing
 
-See
-<a href="https://github.com/rendinjast/iconsax-react/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a>
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 ## License
 
-<a href="https://github.com/rendinjast/iconsax-react/blob/main/LICENSE">MIT</a>
+[MIT](./LICENSE)
