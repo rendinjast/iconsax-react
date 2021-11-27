@@ -10,13 +10,13 @@ const output = [
   {
     dir: 'dist/cjs',
     format: 'cjs',
-    exports: 'named',
+    exports: 'auto',
     sourcemap: false,
   },
   {
     dir: 'dist/esm',
     format: 'es',
-    exports: 'named',
+    exports: 'auto',
     sourcemap: false,
   },
 ];

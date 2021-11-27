@@ -133,7 +133,7 @@ const react = async (icons) => {
 
        ${switchStatementForVariants(iconsAllVariant)}
 
-       export const ${ComponentName} =
+       const ${ComponentName} =
        forwardRef(({ variant , color, size , ...rest }, ref) => {
           return (
               <svg {...rest} xmlns="http://www.w3.org/2000/svg" ref={ref} width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -150,7 +150,10 @@ const react = async (icons) => {
         color: '#292D32',
         size: '24'
        }
-       ${ComponentName}.displayName = '${ComponentName}'`;
+       ${ComponentName}.displayName = '${ComponentName}'
+
+       export default ${ComponentName}
+       `;
 
       await fs.writeFile(
         path.join(builtSourceDir, `${ComponentName}.js`),
@@ -159,7 +162,7 @@ const react = async (icons) => {
       );
 
       // add export component to index.js
-      const exportString = `export { ${ComponentName} } from './${ComponentName}.js';\r\n`;
+      const exportString = `export { default as ${ComponentName} } from './${ComponentName}.js';\r\n`;
       await fs.appendFile(path.join(builtSourceDir, 'index.js'), exportString, 'utf-8');
 
       // add type definition for component in index.d.ts
@@ -210,7 +213,7 @@ const reactNative = async (icons) => {
 
          ${switchStatementForVariants(iconsAllVariant)}
 
-         export const ${ComponentName} =
+         const ${ComponentName} =
          forwardRef(({ variant , color, size , ...rest }, ref) => {
             return (
                 <Svg {...rest} xmlns="http://www.w3.org/2000/svg" ref={ref} width={size} height={size} viewBox="0 0 24 24" fill="none">
@@ -227,7 +230,9 @@ const reactNative = async (icons) => {
           color: '#292D32',
           size: '24'
          }
-         ${ComponentName}.displayName = '${ComponentName}'`;
+         ${ComponentName}.displayName = '${ComponentName}'
+         export default ${ComponentName}
+         `;
 
       await fs.writeFile(
         path.join(builtSourceDir, `${ComponentName}.js`),
@@ -236,7 +241,7 @@ const reactNative = async (icons) => {
       );
 
       // add export component to index.js
-      const exportString = `export { ${ComponentName} } from './${ComponentName}.js';\r\n`;
+      const exportString = `export { default as ${ComponentName} } from './${ComponentName}.js';\r\n`;
       await fs.appendFile(path.join(builtSourceDir, 'index.js'), exportString, 'utf-8');
 
       // add type definition for component in index.d.ts
