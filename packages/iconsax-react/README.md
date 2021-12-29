@@ -46,11 +46,11 @@ You can configure Icons with inline props:
 
 ## Props
 
-| Prop      | Type                                                | Default   | Note                   |
-| --------- | --------------------------------------------------- | --------- | ---------------------- |
-| `color`   | `string`                                            | `#292D32` | css color              |
-| `size`    | `number` `string`                                   | 24px      | size={24} or size="24" |
-| `variant` | `Linear` `Outline` `TwoTone` `Bulk` `Broken` `Bold` | `Linear`  | icons styles           |
+| Prop      | Type                                                | Default        | Note                   |
+| --------- | --------------------------------------------------- | -------------- | ---------------------- |
+| `color`   | `string`                                            | `currentColor` | css color              |
+| `size`    | `number` `string`                                   | 24px           | size={24} or size="24" |
+| `variant` | `Linear` `Outline` `TwoTone` `Bulk` `Broken` `Bold` | `Linear`       | icons styles           |
 
 ---
 

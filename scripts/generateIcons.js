@@ -147,7 +147,7 @@ const react = async (icons) => {
        }
        ${ComponentName}.defaultProps = {
         variant: 'Linear',
-        color: '#292D32',
+        color: 'currentColor',
         size: '24'
        }
        ${ComponentName}.displayName = '${ComponentName}'
@@ -227,7 +227,7 @@ const reactNative = async (icons) => {
          }
          ${ComponentName}.defaultProps = {
           variant: 'Linear',
-          color: '#292D32',
+          color: 'currentColor',
           size: '24'
          }
          ${ComponentName}.displayName = '${ComponentName}'
