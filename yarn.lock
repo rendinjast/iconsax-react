@@ -5568,13 +5568,6 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-iconsax-react@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/iconsax-react/-/iconsax-react-0.0.2.tgz#5c4835d71506ab341a2e5137e011b63e4f5c72d6"
-  integrity sha512-Vy9PzvR3bqwIhjPyxBLWPLjuhBD70ZBRet1UiY3rY23urQXPV5FtHoiuXMa5SV1Q7D2ngFZCe+1rNfhi5vsQIg==
-  dependencies:
-    prop-types "^15.7.2"
-
 iconv-lite@0.4.24, iconv-lite@^0.4.24:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
