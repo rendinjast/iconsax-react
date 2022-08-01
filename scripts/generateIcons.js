@@ -93,14 +93,14 @@ const switchStatementForVariants = (iconsAllVariant) => {
 };
 
 const initialTypeDefinitions = `/// <reference types="react" />
-import { FC, SVGAttributes, Ref } from 'react';
+import { SVGAttributes, Ref } from 'react';
 export interface IconProps extends SVGAttributes<SVGElement> {
   variant?: 'Linear' | 'Outline' | 'Broken' | 'Bold' | 'Bulk' | 'TwoTone';
   ref?: Ref<SVGSVGElement>;
   color?: string;
   size?: string | number;
 }
-export type Icon = FC<IconProps>;
+export type Icon = IconProps;
 `;
 
 const react = async (icons) => {
