@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import icons, { IIconsArray } from '../lib/icons'
 import { IconItem } from '.'
 import { searchStore } from '../store'
-import { EmojiSad } from 'iconsax-react'
+import { EmojiSad } from 'iconsax-reactjs'
 import { AutoSizer, List, WindowScroller } from 'react-virtualized'
 
 const Empty = () => {

@@ -4,7 +4,7 @@ import { saveAs } from 'file-saver'
 import copy from 'copy-to-clipboard'
 import canvg from 'canvg'
 import gsap from 'gsap'
-import { ClipboardText, CloseCircle, Import } from 'iconsax-react'
+import { ClipboardText, CloseCircle, Import } from 'iconsax-reactjs'
 import { useOnClickOutside } from '../hooks'
 import { selectedStore, useIconContext } from '../store'
 

@@ -1,4 +1,4 @@
-import { ArrowDown2 } from 'iconsax-react'
+import { ArrowDown2 } from 'iconsax-reactjs'
 import { useRef, useState } from 'react'
 import { useOnClickOutside, useWindowSize } from '../hooks'
 import { VariantType } from '../store/IconContext'

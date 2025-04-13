@@ -1,4 +1,4 @@
-import { SearchNormal } from 'iconsax-react'
+import { SearchNormal } from 'iconsax-reactjs'
 import React, { useState, useCallback } from 'react'
 import { useDebounce } from '../hooks'
 import { searchStore } from '../store'

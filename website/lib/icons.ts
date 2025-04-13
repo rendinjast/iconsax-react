@@ -1,5 +1,5 @@
-import * as Icons from 'iconsax-react'
-import { Icon } from 'iconsax-react'
+import * as Icons from 'iconsax-reactjs'
+import { Icon } from 'iconsax-reactjs'
 
 type iconType = keyof typeof Icons
 

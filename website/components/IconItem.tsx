@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 import gsap from 'gsap'
-import { Icon } from 'iconsax-react'
+import { Icon } from 'iconsax-reactjs'
 import { useIconContext, selectedStore } from '../store'
 
 // eslint-disable-next-line react/display-name
