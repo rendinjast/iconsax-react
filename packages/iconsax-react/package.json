@@ -1,9 +1,9 @@
 {
-  "name": "iconsax-react",
+  "name": "iconsax-reactjs",
   "version": "0.0.8",
   "description": "Iconsax icon pack for React",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
-  "homepage": "https://iconsax-react.pages.dev/",
+  "homepage": "https://iconsax.erfan.ee",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rendinjast/iconsax-react.git",
@@ -57,8 +57,5 @@
   },
   "peerDependencies": {
     "react": "*"
-  },
-  "dependencies": {
-    "prop-types": "^15.7.2"
   }
 }

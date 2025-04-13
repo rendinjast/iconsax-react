@@ -1,8 +1,8 @@
 {
-  "name": "iconsax-react-native",
+  "name": "iconsax-react-nativejs",
   "version": "0.0.8",
   "author": "Erfan Khadivar <rendinjast@gmail.com>",
-  "homepage": "https://iconsax-react.pages.dev/",
+  "homepage": "https://iconsax.erfan.ee/",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rendinjast/iconsax-react.git",
@@ -63,8 +63,5 @@
     "react": "*",
     "react-native": ">=0.46",
     "react-native-svg": ">=5.3"
-  },
-  "dependencies": {
-    "prop-types": "^15.7.2"
   }
 }

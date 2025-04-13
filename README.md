@@ -7,37 +7,34 @@ Perfectly balance |
 <p>
 
 <p align="center">
-  <a href="https://iconsax-react.pages.dev/"><strong>Browse icons at site</strong></a>
+  <a href="https://iconsax.erfan.ee/"><strong>Browse icons at site</strong></a>
 </p>
 <br>
 <br>
-
-> ©️ iconsax [github](https://github.com/lusaxweb/iconsax) and
-> [official website](https://iconsax.io/) (other format and platform available)
 
 ## Installation
 
 ### React
 
 ```bash
-yarn add iconsax-react
+yarn add iconsax-reactjs
 # or
-npm i iconsax-react
+npm i iconsax-reactjs
 ```
 
 ### React Native
 
 ```bash
-yarn add iconsax-react-native react-native-svg
+yarn add iconsax-react-nativejs react-native-svg
 # or
-npm i iconsax-react-native react-native-svg
+npm i iconsax-react-nativejs react-native-svg
 ```
 
 ## Usage
 
 ```jsx
 import React from 'react';
-//import icon. for React Native import from 'iconsax-react-native'
+//import icon. for React Native import from 'iconsax-react-nativejs'
 import { EmojiHappy } from 'iconsax-react';
 
 const Example = () => {
