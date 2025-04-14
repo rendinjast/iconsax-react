@@ -35,7 +35,7 @@ npm i iconsax-react-nativejs react-native-svg
 ```jsx
 import React from 'react';
 //import icon. for React Native import from 'iconsax-react-nativejs'
-import { EmojiHappy } from 'iconsax-react';
+import { EmojiHappy } from 'iconsax-reactjs';
 
 const Example = () => {
   // then use it as a normal React Component
